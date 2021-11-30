@@ -1,0 +1,1628 @@
+root@tctrko1:~# for foo in $(ip netns|awk '{print $1}'); do echo $foo; ip netn exec $foo ip addr; done
+
+
+qrouter-e2b89da7-4b48-4150-a0f8-605cdd2168cb
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-bccd2b4c-22@if269: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:83:b8:53 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.195.108/18 brd 169.254.255.255 scope global ha-bccd2b4c-22
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe83:b853/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-7c02c505-06@if271: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:17:e9:16 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-99f3f847-4a@if273: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:01:42:e0 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-d893bd3e-d467-418f-af43-1cf102114583
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-817d6ae2-84@if268: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:43:bc:b4 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.195.188/18 brd 169.254.255.255 scope global ha-817d6ae2-84
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe43:bcb4/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-8a748259-d4@if270: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:5b:56:33 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-9cb05cdd-ef@if272: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:df:d8:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-adaea0d4-8e8a-4803-996d-220aad208c26
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-2cd8b522-da@if265: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:58:75:81 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.192.62/18 brd 169.254.255.255 scope global ha-2cd8b522-da
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe58:7581/64 scope link 
+       valid_lft forever preferred_lft forever
+qrouter-ad4153a5-74de-400f-ab79-dc9b2b2f7b16
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-ee61e4f9-a9@if264: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:30:64:9a brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.195.152/18 brd 169.254.255.255 scope global ha-ee61e4f9-a9
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe30:649a/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-a0b300cd-95@if266: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:bb:5e:94 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-9b3d0898-49@if267: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:85:d1:b4 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-7d0da180-6203-43cd-a32f-51513f007a17
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-6cdec2dc-dd@if251: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:86:36:e3 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.194.131/18 brd 169.254.255.255 scope global ha-6cdec2dc-dd
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe86:36e3/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-0a6f295d-5e@if257: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:29:db:ac brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-d5956043-39@if262: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:a7:84:77 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-72f94411-4911-4575-878d-19b496e0766c
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-a7a9a99f-3d@if249: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:78:74:70 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.192.92/18 brd 169.254.255.255 scope global ha-a7a9a99f-3d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe78:7470/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-567e708f-e9@if256: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:91:05:f7 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-6f2535f3-81@if263: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:6f:5b:b8 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-56588b06-3765-4a9e-a037-f7229ef92ca7
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-02bac75c-2e@if250: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:6c:4a:b1 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.192.122/18 brd 169.254.255.255 scope global ha-02bac75c-2e
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe6c:4ab1/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-1aba0521-04@if255: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:92:1f:76 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-fa1dba4c-c0@if261: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:33:cc:d9 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-508b9a74-7b39-407d-9206-a53c2e8b62d2
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-43c81884-c3@if248: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:aa:e5:0e brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.192.5/18 brd 169.254.255.255 scope global ha-43c81884-c3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feaa:e50e/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-00111b44-3b@if254: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:70:08:b3 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-5c23d05b-7e@if260: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:b6:f9:2f brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-3804d2ed-7bbf-496c-820d-cc03f9b686cb
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-55a9d875-fe@if247: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:fc:23:ff brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.193.128/18 brd 169.254.255.255 scope global ha-55a9d875-fe
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fefc:23ff/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-ddd588b6-e2@if253: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:9e:5a:69 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-49cf64bb-55@if259: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:90:17:d2 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-118c2f63-9aa1-4e6d-b121-3f4d3c2beaeb
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-dd68e311-d4@if246: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:8e:99:5f brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.195.25/18 brd 169.254.255.255 scope global ha-dd68e311-d4
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe8e:995f/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-dd4d2673-57@if252: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:dc:76:35 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-768e4eb3-cb@if258: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:de:6f:81 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-0e36dc22-da84-4aa5-a9f3-af9c1caf9e52
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-b449c4ee-7d@if242: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ee:62:e7 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.195.190/18 brd 169.254.255.255 scope global ha-b449c4ee-7d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feee:62e7/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qg-b7818689-ae@if244: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:92:18:d1 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qrouter-07678d8b-566b-4fbb-b720-b398d20b7d5a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ha-e5346b4a-cc@if241: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:cf:8a:e8 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.192.4/18 brd 169.254.255.255 scope global ha-e5346b4a-cc
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fecf:8ae8/64 scope link 
+       valid_lft forever preferred_lft forever
+3: qr-e486a7ba-a9@if243: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:87:cf:30 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+4: qg-5af05917-f0@if245: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether fa:16:3e:53:b0:da brd ff:ff:ff:ff:ff:ff link-netnsid 0
+qdhcp-ea50609d-da31-4b9b-b3d7-348c1d107042
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-05a875d4-ee@if240: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:cd:4f:83 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-05a875d4-ee
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-05a875d4-ee
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fecd:4f83/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-a4585e5f-f9d5-4e5b-8007-c8d4af7e05dc
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-c4048954-e7@if239: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ee:13:11 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-c4048954-e7
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-c4048954-e7
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feee:1311/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-7fbdcde6-3325-44a1-b41b-5afd7a97eb39
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-12cfeb15-8d@if238: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:7a:13:e7 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-12cfeb15-8d
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-12cfeb15-8d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe7a:13e7/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-ffd42d65-b94f-4a8f-b4d4-657961e0e278
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-c2068365-14@if237: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:98:e9:45 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-c2068365-14
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-c2068365-14
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe98:e945/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-fc3fc63a-1c9d-49f6-b894-42914c9f6a38
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-789f6e16-ed@if236: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:06:f4:fe brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-789f6e16-ed
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-789f6e16-ed
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe06:f4fe/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-fb5f283b-895f-4865-9e08-a98dc6616aa0
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-ac987487-72@if235: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:9a:9d:af brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-ac987487-72
+       valid_lft forever preferred_lft forever
+    inet 192.168.4.2/24 brd 192.168.4.255 scope global ns-ac987487-72
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe9a:9daf/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-fad1a2f6-e6ba-4bc3-bf05-67e6ae06b6aa
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-5398dbdd-a8@if234: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:a3:23:8d brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-5398dbdd-a8
+       valid_lft forever preferred_lft forever
+    inet 10.2.0.3/24 brd 10.2.0.255 scope global ns-5398dbdd-a8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fea3:238d/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-fa7187db-baa1-4ab7-af5e-11c85a51b8a0
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-d0157d99-ea@if233: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ec:03:fd brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-d0157d99-ea
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-d0157d99-ea
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feec:3fd/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-eaba311e-4a1b-4fdb-b00a-369547030cb8
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-5b0fd0da-7a@if232: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:2d:fb:ce brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-5b0fd0da-7a
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-5b0fd0da-7a
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe2d:fbce/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-ddf9df37-2405-41dc-a632-d88dd2ec6f86
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-fb302d4d-d5@if231: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:56:af:11 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-fb302d4d-d5
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-fb302d4d-d5
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe56:af11/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-dd85776a-6bc7-4e5f-8311-045a9d53625d
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-cb7f5c1c-be@if230: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:3e:a8:56 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-cb7f5c1c-be
+       valid_lft forever preferred_lft forever
+    inet 192.168.2.11/24 brd 192.168.2.255 scope global ns-cb7f5c1c-be
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe3e:a856/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-dca43a5e-d963-4f1c-b288-1d25d92c05bb
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-8767a827-df@if229: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ae:61:58 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-8767a827-df
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-8767a827-df
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feae:6158/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-dc734735-2698-42b7-8c53-8868207ad6e7
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-8921ed39-0e@if228: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:42:b3:4b brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-8921ed39-0e
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-8921ed39-0e
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe42:b34b/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-da57a5b0-4c5f-4ade-b2d1-cfb746b3fcab
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-1dd76530-95@if227: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:3e:2a:23 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-1dd76530-95
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-1dd76530-95
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe3e:2a23/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-d8e1a5c8-96f1-4130-b993-4066d22e3efc
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-4158f8eb-95@if226: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:93:23:03 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-4158f8eb-95
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-4158f8eb-95
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe93:2303/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-d61287db-5972-4e0b-a0ff-1fc870fb4ff1
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-9bf172ec-1a@if225: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:8b:ff:c9 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-9bf172ec-1a
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-9bf172ec-1a
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe8b:ffc9/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-d5a458ea-e969-4646-bc5c-4aea63ed9348
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-8b8f9dd9-a4@if224: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:7c:9e:44 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-8b8f9dd9-a4
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-8b8f9dd9-a4
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe7c:9e44/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-d481a19e-49d5-4a1c-a62b-4334eff90bea
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-dff250bd-76@if223: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:58:b9:8f brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-dff250bd-76
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-dff250bd-76
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe58:b98f/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-d3fcece9-bee7-46e4-a3e2-bf3d661b0aa5
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-c83df37a-9f@if220: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:1c:c3:ec brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-c83df37a-9f
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-c83df37a-9f
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe1c:c3ec/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-d35bb349-dd77-4e31-ad7e-c3ba27f0b14a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-3554b19a-6b@if219: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:e8:9c:1f brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-3554b19a-6b
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-3554b19a-6b
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fee8:9c1f/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-d1a266b7-8694-49b7-939c-a24825fa92b5
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-e3858c4f-c1@if218: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:03:da:52 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-e3858c4f-c1
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-e3858c4f-c1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe03:da52/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-d09b7c99-3951-45b5-9b10-6202fdebe12e
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-ec601390-da@if215: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:6a:44:18 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-ec601390-da
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-ec601390-da
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe6a:4418/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-cf258fee-3a66-4669-a5f9-6c275c0b97f0
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-a01e0579-51@if214: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:36:2b:7c brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-a01e0579-51
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-a01e0579-51
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe36:2b7c/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-ccf087d5-1d06-4b89-94ee-7d78c9da45c9
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-d3c4f807-c8@if211: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:91:08:c0 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-d3c4f807-c8
+       valid_lft forever preferred_lft forever
+    inet 10.2.0.3/24 brd 10.2.0.255 scope global ns-d3c4f807-c8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe91:8c0/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-cbb6e6e7-609a-480f-a120-f32bbce26303
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-cc09142b-0e@if210: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:78:28:dd brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-cc09142b-0e
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-cc09142b-0e
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe78:28dd/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-c9b05afb-9017-4f54-8109-fbd26733ab82
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-f72569bd-d3@if209: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:3a:ba:e5 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-f72569bd-d3
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-f72569bd-d3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe3a:bae5/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-c9159997-a4fa-4d81-a85a-9b8000462fcf
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-9c5b8282-1f@if208: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:57:74:fc brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-9c5b8282-1f
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-9c5b8282-1f
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe57:74fc/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-c7a8f166-2318-496d-bb4a-72626fa7e8ce
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-65093ec7-97@if205: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ca:fc:33 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-65093ec7-97
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-65093ec7-97
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feca:fc33/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-c69ca7d7-1dae-4bef-b0a2-7fd19a482212
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-85c5019c-40@if202: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:3d:73:01 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-85c5019c-40
+       valid_lft forever preferred_lft forever
+    inet 192.168.100.2/24 brd 192.168.100.255 scope global ns-85c5019c-40
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe3d:7301/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-c6105e25-df89-4648-8685-e7c2e6142dba
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-c02560cf-b1@if200: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:b0:0a:d6 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-c02560cf-b1
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-c02560cf-b1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feb0:ad6/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-bfc2f20e-b449-4081-8809-dc56f0e2be3f
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-0208a78d-8e@if198: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:b0:f2:28 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-0208a78d-8e
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-0208a78d-8e
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feb0:f228/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-bd42f82b-0ed3-495b-a953-d0ac214067e1
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-a0f6c879-58@if197: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:af:98:e2 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-a0f6c879-58
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-a0f6c879-58
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feaf:98e2/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-b180edbb-07af-4e25-b469-bb23c4f358f4
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-9304be3f-b7@if194: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:18:81:a8 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-9304be3f-b7
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-9304be3f-b7
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe18:81a8/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-b7cbc61a-2338-44fd-b8eb-6d0b35a99d9d
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-0a09b3ff-f2@if193: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ae:26:60 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-0a09b3ff-f2
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-0a09b3ff-f2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feae:2660/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-ab456c98-75ee-45cb-a7ea-94662415346d
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-5389d69b-3f@if192: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:17:88:7c brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-5389d69b-3f
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-5389d69b-3f
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe17:887c/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-a8df7f13-0902-4c9a-b2e9-b8629b300587
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-45bbcb67-d3@if189: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:2a:57:f6 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-45bbcb67-d3
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-45bbcb67-d3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe2a:57f6/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-a5cd87fc-38cd-4d24-b093-6f4619d57546
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-38f79f8d-aa@if188: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:fd:2b:fb brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-38f79f8d-aa
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-38f79f8d-aa
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fefd:2bfb/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-a5a69735-d3da-4cd5-ab0f-1b009a6cc4f7
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-013c3263-05@if185: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:a4:82:94 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-013c3263-05
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-013c3263-05
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fea4:8294/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-99c9a4b5-8859-4f29-8c31-ed85d6512f3c
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-31c36421-06@if182: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:be:6f:08 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-31c36421-06
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-31c36421-06
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:febe:6f08/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-99569779-aea7-432e-8619-5111c9bcb1da
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-79ef2d2b-c1@if181: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:aa:bf:82 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-79ef2d2b-c1
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-79ef2d2b-c1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feaa:bf82/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-95b2c232-7e6d-494d-b0ea-eefaabfc5d28
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-5956f8aa-ea@if180: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:4c:d3:b9 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-5956f8aa-ea
+       valid_lft forever preferred_lft forever
+    inet 192.168.3.11/24 brd 192.168.3.255 scope global ns-5956f8aa-ea
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe4c:d3b9/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-95abc1b1-78e1-46aa-b1f8-e9056198c1e8
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-667ddf84-1d@if179: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:fc:83:27 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-667ddf84-1d
+       valid_lft forever preferred_lft forever
+    inet 10.0.103.3/24 brd 10.0.103.255 scope global ns-667ddf84-1d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fefc:8327/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-94550b44-f75c-4d8a-a9bf-7c92830f8045
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-53483429-ea@if178: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:4d:1f:bf brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-53483429-ea
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-53483429-ea
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe4d:1fbf/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-92e4ff7d-76e4-4e72-928f-ef7eb346d455
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-739ec2a6-19@if175: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:3b:62:9b brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-739ec2a6-19
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-739ec2a6-19
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe3b:629b/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-8fcadd8e-bfb2-4d34-afcd-8ac6aac25aab
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-8459c64b-33@if174: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:01:da:65 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-8459c64b-33
+       valid_lft forever preferred_lft forever
+    inet 192.168.0.2/24 brd 192.168.0.255 scope global ns-8459c64b-33
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe01:da65/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-8c9de29c-e264-4a47-bbca-2d859a78704b
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-f42c5ebf-71@if172: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ae:c5:bc brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-f42c5ebf-71
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-f42c5ebf-71
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feae:c5bc/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-8b46c924-1b0a-473d-a7f3-70b0c2ffee8b
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-5a7d31cf-52@if170: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:89:e4:49 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-5a7d31cf-52
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-5a7d31cf-52
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe89:e449/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-84c1cef9-f801-46a2-8fbd-809ba6855d38
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-f87b5647-bb@if169: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:06:00:79 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-f87b5647-bb
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-f87b5647-bb
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe06:79/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-7e9d2f2a-f516-41b4-a1b9-69e484d41722
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-29a9349a-2d@if165: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:76:28:99 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-29a9349a-2d
+       valid_lft forever preferred_lft forever
+    inet 192.168.0.3/24 brd 192.168.0.255 scope global ns-29a9349a-2d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe76:2899/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-7b3903ef-b8aa-4297-937c-f7aa5a8e11e6
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-96d9aa23-a8@if163: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:f4:1a:c4 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-96d9aa23-a8
+       valid_lft forever preferred_lft forever
+    inet 192.168.0.3/24 brd 192.168.0.255 scope global ns-96d9aa23-a8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fef4:1ac4/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-7af09d62-726d-4f08-8c87-b471650951e5
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-2111fb27-75@if162: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:55:54:82 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-2111fb27-75
+       valid_lft forever preferred_lft forever
+    inet 192.168.100.4/24 brd 192.168.100.255 scope global ns-2111fb27-75
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe55:5482/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-790ae8de-cb83-4633-9249-6fd3c69d5e1e
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-418dd998-e6@if159: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:19:54:e4 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-418dd998-e6
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-418dd998-e6
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe19:54e4/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-73cc6de2-1a9b-4066-b41c-528ab59ab533
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-de63d153-99@if158: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:05:b5:80 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-de63d153-99
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-de63d153-99
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe05:b580/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-6d5c9ddd-e312-4249-aaaa-45e85ee8d5b6
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-1614b9fc-75@if155: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:50:da:9a brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-1614b9fc-75
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-1614b9fc-75
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe50:da9a/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-6c3a5fbe-9a06-46e8-9205-72aa90019915
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-4585a040-f3@if154: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ac:fd:de brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-4585a040-f3
+       valid_lft forever preferred_lft forever
+    inet 172.16.8.4/24 brd 172.16.8.255 scope global ns-4585a040-f3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feac:fdde/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-5b07eb65-64b3-45f1-aba1-520b1a749889
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-c1a79e9f-87@if153: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:33:b2:cd brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-c1a79e9f-87
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-c1a79e9f-87
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe33:b2cd/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-59fbc980-3b6c-4399-a847-913b750ca730
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-3e21c1c8-f0@if152: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:59:a8:83 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 10.9.13.100/22 brd 10.9.15.255 scope global ns-3e21c1c8-f0
+       valid_lft forever preferred_lft forever
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-3e21c1c8-f0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe59:a883/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-588f92c6-cd86-41c9-add2-f8b7e258dbd7
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-15caa000-b3@if151: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:e9:6e:4d brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-15caa000-b3
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-15caa000-b3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fee9:6e4d/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-54f436ad-905b-484c-8114-4b1bd6b41cca
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-4b1298e5-16@if148: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:82:1c:98 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-4b1298e5-16
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-4b1298e5-16
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe82:1c98/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-4ed27971-bb03-4ae8-8c34-3feda4a73bde
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-0e3badb7-34@if145: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:17:78:62 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-0e3badb7-34
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-0e3badb7-34
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe17:7862/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-4e887549-8ef0-413d-abd4-5ecc56490b41
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-479d830b-ca@if144: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ce:56:bd brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-479d830b-ca
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-479d830b-ca
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fece:56bd/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-480f91ad-fc33-4902-b4a1-4ee74060e76e
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-be1fa473-70@if141: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:8e:47:35 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-be1fa473-70
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-be1fa473-70
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe8e:4735/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-47aaa8e9-719e-4be8-8c39-8e504a5a1408
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-8683835b-ff@if140: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:c9:12:6d brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-8683835b-ff
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-8683835b-ff
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fec9:126d/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-45306f94-a450-432b-b22f-1d3f0dfe0da6
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-6f3ae1b2-05@if139: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:5b:e0:82 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-6f3ae1b2-05
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-6f3ae1b2-05
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe5b:e082/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-3f64c44a-ccbb-4466-9c08-ba0e7b5e6c05
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-de69dfed-2d@if132: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:a6:8c:4d brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-de69dfed-2d
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-de69dfed-2d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fea6:8c4d/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-3ed92dc5-0670-477f-a853-2b47e11dbeaf
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-dce2cff7-a6@if131: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:7b:95:51 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-dce2cff7-a6
+       valid_lft forever preferred_lft forever
+    inet 10.2.0.2/24 brd 10.2.0.255 scope global ns-dce2cff7-a6
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe7b:9551/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-3a5cbe1c-e8e8-47ec-be64-d89d78238011
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-9a99bf98-ec@if130: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:a5:df:65 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-9a99bf98-ec
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-9a99bf98-ec
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fea5:df65/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-39deabb9-9176-4f6c-9808-58e353380266
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-77da5529-1d@if129: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:ca:04:d1 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-77da5529-1d
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-77da5529-1d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feca:4d1/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-36caa7f4-4f44-448b-b7c5-04087441c222
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-3a91a7c1-9f@if126: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:6d:64:7f brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-3a91a7c1-9f
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-3a91a7c1-9f
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe6d:647f/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-32bcd022-0d3c-4ac1-a826-552894ad7331
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-ad3d0cde-7a@if125: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:0b:dd:e4 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-ad3d0cde-7a
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-ad3d0cde-7a
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe0b:dde4/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-300f19d3-44ab-4ec3-8951-ddeaac8a14de
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-723b5a6d-da@if120: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:24:99:2d brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-723b5a6d-da
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-723b5a6d-da
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe24:992d/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-300b6076-4888-47fb-a491-ffb73899c7fe
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-288d9119-4a@if117: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:47:15:bd brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-288d9119-4a
+       valid_lft forever preferred_lft forever
+    inet 192.168.0.3/24 brd 192.168.0.255 scope global ns-288d9119-4a
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe47:15bd/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-2f1b1755-d968-4be0-ac38-c76c3cc460c8
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-1a1da403-96@if116: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:60:93:e9 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-1a1da403-96
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-1a1da403-96
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe60:93e9/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-2c31e9a2-f3ff-40ac-ad38-1135f84dbfcf
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-6ac82e6c-f7@if115: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:42:a1:63 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-6ac82e6c-f7
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-6ac82e6c-f7
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe42:a163/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-243b547c-6e72-454b-a93c-4bb38899b7bf
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-fc1d2251-9d@if110: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:fb:05:a5 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-fc1d2251-9d
+       valid_lft forever preferred_lft forever
+    inet 10.0.95.100/24 brd 10.0.95.255 scope global ns-fc1d2251-9d
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fefb:5a5/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-23e3b9c9-1b22-4a93-8438-a33adc0477e1
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-ebc0b64a-a5@if109: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:24:b5:8f brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-ebc0b64a-a5
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-ebc0b64a-a5
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe24:b58f/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-22d97fa1-ec8a-47ef-9143-e60cf87a9b64
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-a837e0d5-2f@if108: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:1d:41:e7 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-a837e0d5-2f
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-a837e0d5-2f
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe1d:41e7/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-218ed42d-ede6-41ab-adcd-e3f5dc9da625
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-178647b6-e2@if105: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:5a:29:e3 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-178647b6-e2
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-178647b6-e2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe5a:29e3/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-2155f445-ba2c-45f0-94e1-29574e3fdbc1
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-d28fe277-4c@if104: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:29:f6:b5 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-d28fe277-4c
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-d28fe277-4c
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe29:f6b5/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-20af6301-adcd-4390-b961-935ac20ed8c3
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-ee8298b6-a9@if103: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:1f:30:18 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-ee8298b6-a9
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-ee8298b6-a9
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe1f:3018/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-1dc4f5ff-2156-4ba9-99e0-cc2dbfe10082
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-fa56b04a-12@if98: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:da:fd:23 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-fa56b04a-12
+       valid_lft forever preferred_lft forever
+    inet 192.168.100.2/24 brd 192.168.100.255 scope global ns-fa56b04a-12
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:feda:fd23/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-1a708a30-8f05-44b8-ba12-005db64817ba
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-dc81e819-e0@if97: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:bb:d1:1d brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-dc81e819-e0
+       valid_lft forever preferred_lft forever
+    inet 192.168.2.3/24 brd 192.168.2.255 scope global ns-dc81e819-e0
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-dc81e819-e0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:febb:d11d/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-187b49f7-e81c-40e9-b474-c9b560ce976b
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-08c55ab0-95@if94: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:05:12:5b brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-08c55ab0-95
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-08c55ab0-95
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe05:125b/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-14b80f76-be69-4985-b83c-ba771adcfe46
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-ba37792d-70@if93: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:41:22:ad brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-ba37792d-70
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-ba37792d-70
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe41:22ad/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-11ef0498-60a8-439f-81dc-03412fa19b6b
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-c4184075-b5@if85: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:24:31:7c brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-c4184075-b5
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-c4184075-b5
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe24:317c/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-07083c7d-8f99-4c83-be8c-1731a0d0dcd0
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-ada2a823-2a@if81: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:7d:47:42 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-ada2a823-2a
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-ada2a823-2a
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe7d:4742/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-0667a800-dde4-4198-99fe-6cb45a444ad5
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-651cf6b3-ac@if80: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:28:80:88 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-651cf6b3-ac
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global ns-651cf6b3-ac
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe28:8088/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-0b903da5-71f0-469c-b933-d0f552734e49
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-8a3785b3-93@if79: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:fe:92:93 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-8a3785b3-93
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-8a3785b3-93
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fefe:9293/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-024e91e7-a2f4-45fa-b3f9-c584472c1712
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-03a94eea-a3@if78: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:f3:6f:f4 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-03a94eea-a3
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-03a94eea-a3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fef3:6ff4/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-08f37069-c246-47dd-a4de-105150ae4a63
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-10bddd32-ad@if77: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:c1:ec:f5 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-10bddd32-ad
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-10bddd32-ad
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fec1:ecf5/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-08383a59-550e-434a-b752-29f593ae7477
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-6b60bf15-47@if76: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:31:6e:7d brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-6b60bf15-47
+       valid_lft forever preferred_lft forever
+    inet 192.168.2.3/24 brd 192.168.2.255 scope global ns-6b60bf15-47
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe31:6e7d/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-112c2a1a-3e98-45f0-9922-ca17695e0378
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-16b557b8-8b@if75: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:f5:7d:29 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-16b557b8-8b
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.4/24 brd 192.168.1.255 scope global ns-16b557b8-8b
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fef5:7d29/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-0a74cbd9-9f46-47d6-807d-b2bf62e55fed
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-99c14c75-ed@if74: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:bb:04:2a brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-99c14c75-ed
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-99c14c75-ed
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:febb:42a/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-07e1c3a6-8bba-4f1c-bc2c-a003eaf436ec
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-faf02082-c7@if71: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:4f:7e:33 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-faf02082-c7
+       valid_lft forever preferred_lft forever
+    inet 192.168.1.3/24 brd 192.168.1.255 scope global ns-faf02082-c7
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe4f:7e33/64 scope link 
+       valid_lft forever preferred_lft forever
+qdhcp-018e26f5-ceca-4201-ba50-b726eecd7608
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ns-ff69bb09-6b@if70: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether fa:16:3e:fb:b0:f9 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 169.254.169.254/16 brd 169.254.255.255 scope global ns-ff69bb09-6b
+       valid_lft forever preferred_lft forever
+    inet 192.168.50.4/24 brd 192.168.50.255 scope global ns-ff69bb09-6b
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fefb:b0f9/64 scope link 
+       valid_lft forever preferred_lft forever

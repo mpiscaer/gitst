@@ -1,0 +1,277 @@
+root@tctrko3:~# brctl show
+bridge name	bridge id		STP enabled	interfaces
+br-backup		8000.e23cfa6a9226	no		bond0.168
+br-lbaas		8000.c66ad61dc6bd	no		09aa88f3_eth14
+							bond0.912
+							tap95579617-37
+br-mgmt		8000.d61096f9fd2f	no		09aa88f3_eth1
+							0aea558f_eth1
+							2f8c91d9_eth1
+							3d369e72_eth1
+							3f574216_eth1
+							41028d98_eth1
+							4d148365_eth1
+							4e406ad9_eth1
+							5387fdb6_eth1
+							5ca0f837_eth1
+							7819c97f_eth1
+							8f4b6596_eth1
+							9958b33d_eth1
+							b6fe637a_eth1
+							b93bb94c_eth1
+							bond0.900
+							c6356e57_eth1
+							d3ad88af_eth1
+							d6071b95_eth1
+							d760490f_eth1
+							fc8a5ef4_eth1
+br-server7		8000.beda855a54ef	no		bond0.7
+br-storage		8000.6e0506529273	no		3f574216_eth2
+							7819c97f_eth2
+							bond0.908
+							c6356e57_eth2
+br-vlan		8000.42d8eeeab4ba	no		bond0
+br-vxlan		8000.26b8896a7b81	no		bond0.904
+brq018e26f5-ce		8000.2252bbdc20b3	no		tap0aef80b5-94
+							tap7c02c505-06
+							vxlan-1
+brq024e91e7-a2		8000.c2849f6253eb	no		tap2b220220-6d
+							vxlan-53
+brq0667a800-dd		8000.2a63c562d7db	no		tap1c70f5f9-5a
+							vxlan-9
+brq07083c7d-8f		8000.b2a2d2d830fc	no		tap649779be-bf
+							vxlan-76
+brq07e1c3a6-8b		8000.1a6631570f90	no		tap90810447-93
+							vxlan-57
+brq08383a59-55		8000.4e8800a71a62	no		tap9118ee6e-2f
+							vxlan-8
+brq08f37069-c2		8000.02433c60a274	no		tap2cac71c0-a3
+							vxlan-70
+brq0a74cbd9-9f		8000.823a889c9a93	no		tap35589afe-bb
+							vxlan-29
+brq0b903da5-71		8000.8eadebb281bf	no		tap301ff9f9-d8
+							vxlan-55
+brq0bf6d7fe-37		8000.000000000000	no		
+brq1037042c-4a		8000.000000000000	no		
+brq112c2a1a-3e		8000.ee75154e97dd	no		tapb548180d-93
+							vxlan-41
+brq11ef0498-60		8000.4ab8ed772190	no		tapd7603196-12
+							vxlan-5
+brq14b80f76-be		8000.fafa050e0354	no		tap528e4bf1-c6
+							vxlan-34
+brq187b49f7-e8		8000.9e3f29c381c8	no		tap1adfb68f-77
+							vxlan-74
+brq1a708a30-8f		8000.627b0a81ba24	no		tape28299f6-c9
+							vxlan-2
+brq1dc4f5ff-21		8000.227684065a07	no		tapcfb0dc9d-5b
+							vxlan-65
+brq20af6301-ad		8000.9e62ee5c861f	no		tap726f6b50-0f
+							vxlan-13
+brq2155f445-ba		8000.aa24f209093a	no		tapff27fbfa-41
+							vxlan-11
+brq218ed42d-ed		8000.cec07d526c74	no		tap2959743e-b0
+							vxlan-45
+brq22d97fa1-ec		8000.da693769bbc1	no		tap00111b44-3b
+							tap0e0c2bb0-89
+							vxlan-83
+brq23e3b9c9-1b		8000.46ff2c35a7fd	no		tap77b3c6e9-fc
+							vxlan-21
+brq243b547c-6e		8000.06849839bda7	no		tap2f778e39-3d
+							vxlan-95
+brq292ae6bd-af		8000.000000000000	no		
+brq2c31e9a2-f3		8000.6e5cbfff7dcc	no		tapa88a5dcb-ac
+							vxlan-27
+brq2f1b1755-d9		8000.520aef16ebcf	no		tap568c6d09-56
+							vxlan-62
+brq300b6076-48		8000.5ec81addede9	no		tap0a6f295d-5e
+							tapd4ca8ff3-3b
+							vxlan-15
+brq300f19d3-44		8000.261f0d16007c	no		tapd156dece-f1
+							vxlan-46
+brq32bcd022-0d		8000.36736bfa0c6c	no		tap93a9d026-9b
+							vxlan-37
+brq35e03c3a-ec		8000.000000000000	no		
+brq36caa7f4-4f		8000.125aeeb4f8df	no		tapf2907ae8-2f
+							vxlan-23
+brq39deabb9-91		8000.4a4b82fd7bbb	no		tape543dc28-2c
+							vxlan-28
+brq3a5cbe1c-e8		8000.aa2408404f2b	no		tap4983c21e-ba
+							vxlan-22
+brq3bbad1b3-56		8000.000000000000	no		
+brq3ed92dc5-06		8000.6a7fcf4c1eb3	no		tap4fcd32af-eb
+							vxlan-233
+brq3f64c44a-cc		8000.02396d337e3a	no		tapad2b25ec-1a
+							vxlan-31
+brq44bf9e76-24		8000.000000000000	no		
+brq45306f94-a4		8000.0e91372ed71e	no		tap8175dd8c-ca
+							vxlan-17
+brq47aaa8e9-71		8000.7237436697cb	no		tapf5c9c111-7a
+							vxlan-32
+brq480f91ad-fc		8000.16c01ebc788a	no		tap2d44bed9-57
+							vxlan-56
+brq4a3b70d1-33		8000.000000000000	no		
+brq4e887549-8e		8000.128ef557b7ab	no		tap7ecb58c4-8f
+							vxlan-49
+brq4ed27971-bb		8000.b2f4a498cd96	no		tapf992f388-6b
+							vxlan-18
+brq50805dd3-48		8000.000000000000	no		
+brq54f436ad-90		8000.522b29d808b1	no		tape5e6e3db-93
+							vxlan-24
+brq588f92c6-cd		8000.226894c73c10	no		tap84ba22f7-5f
+							vxlan-40
+brq59ab2fb4-50		8000.000000000000	no		
+brq5a7974c3-a3		8000.000000000000	no		
+brq5b07eb65-64		8000.6a3e3445d059	no		tapb936af06-1f
+							vxlan-59
+brq6c3a5fbe-9a		8000.1e90ca72bdc9	no		tapcd431af8-17
+							vxlan-6
+brq6d5c9ddd-e3		8000.8e3156037d11	no		tap501281f0-e3
+							vxlan-51
+brq732a6590-ef		8000.000000000000	no		
+brq73cc6de2-1a		8000.0aecdb5d9661	no		tap52444fe5-74
+							vxlan-39
+brq790ae8de-cb		8000.7238f1f61730	no		tap001dd1cb-ab
+							vxlan-80
+brq79fd1898-76		8000.000000000000	no		
+brq7af09d62-72		8000.527faebdae09	no		tap158ed510-8c
+							vxlan-81
+brq7b3903ef-b8		8000.32d49062e023	no		tap8a748259-d4
+							tape8b18932-24
+							vxlan-147
+brq7e9d2f2a-f5		8000.32d24ffca3ae	no		tap489b6ddd-c0
+							tapddd588b6-e2
+							vxlan-246
+brq7fbdcde6-33		8000.6ef9b812089d	no		tap8427aeb7-92
+							vxlan-14
+brq808cdde2-93		8000.000000000000	no		
+brq84c1cef9-f8		8000.02271ba0f465	no		tap8323e980-22
+							vxlan-50
+brq85cf6729-e6		8000.000000000000	no		
+brq8b46c924-1b		8000.ee00176d30f5	no		tap7dee9aba-f3
+							vxlan-60
+brq8c9de29c-e2		8000.9af288fba498	no		tapdd4d2673-57
+							tapfc173b41-11
+							vxlan-149
+brq8fcadd8e-bf		8000.22ac92547ae7	no		tap38294055-37
+							tape486a7ba-a9
+							vxlan-245
+brq92e4ff7d-76		8000.02fc1c97ba33	no		tap206c24ab-a7
+							vxlan-36
+brq94550b44-f7		8000.22862c259e1e	no		tapf0b1211e-36
+							vxlan-20
+brq95abc1b1-78		8000.1624771bc72f	no		br-vlan.103
+							tap49cf64bb-55
+							tap5af05917-f0
+							tap5c23d05b-7e
+							tap6f2535f3-81
+							tap768e4eb3-cb
+							tap99f3f847-4a
+							tap9b3d0898-49
+							tap9cb05cdd-ef
+							tapb7818689-ae
+							tapc83e9e3d-ae
+							tapd5956043-39
+							tapfa1dba4c-c0
+brq95b2c232-7e		8000.0a943f8142a2	no		tap567e708f-e9
+							tap6952a76a-a5
+							vxlan-42
+brq994e3c8a-b5		8000.4245f4f03490	no		tap1b5015a7-4e
+							tap4f9188b3-fe
+							vxlan-148
+brq99569779-ae		8000.3e739416c45c	no		tap0724d3bd-47
+							vxlan-16
+brq99c9a4b5-88		8000.52f150846aa5	no		tap75e4d1b5-c3
+							vxlan-73
+brqa4585e5f-f9		8000.3a0cf510fcc3	no		tap164ef817-c3
+							vxlan-44
+brqa5a69735-d3		8000.32945311c7a0	no		tap86b858c0-da
+							vxlan-67
+brqa5cd87fc-38		8000.02d56267adb2	no		tap4e54dd27-f8
+							vxlan-69
+brqa7f1f6e8-23		8000.1a4f23dd03b0	no		tap1ff1ab80-ea
+							tap43d4f308-10
+							tap4a8cd48e-ff
+							tapbd455465-70
+							tapc7cb6963-7e
+							vxlan-82
+brqa8df7f13-09		8000.2ec62706b12e	no		tap40b71e9a-d2
+							vxlan-38
+brqab456c98-75		8000.3a2b4a0b7a7f	no		tap81d7125b-a4
+							vxlan-78
+brqb180edbb-07		8000.9ab7a9e7ac50	no		tap8ff9d8b9-82
+							vxlan-10
+brqb637f804-4c		8000.000000000000	no		
+brqb6df36a4-b4		8000.000000000000	no		
+brqb7cbc61a-23		8000.1e2eb9e76061	no		tap7235f1b7-f9
+							vxlan-61
+brqbada4336-fc		8000.0aa12f094f81	no		tap41d27a9a-25
+							tap61500c47-4c
+							tapd6877da9-20
+							tapde9e2e9c-89
+							tapf29a5878-f3
+							vxlan-3
+brqbd42f82b-0e		8000.76487f4eb34b	no		tapa13e79bc-8d
+							vxlan-66
+brqbfc2f20e-b4		8000.1234c7be1b24	no		tap24338271-9e
+							vxlan-48
+brqc6105e25-df		8000.1ebff03a2d88	no		tapa7f47b35-38
+							vxlan-58
+brqc69ca7d7-1d		8000.129f76d13222	no		br-vlan.12
+							tap8b2aa65e-c4
+brqc7a8f166-23		8000.8a84ce8b5c72	no		tape99dbe2f-85
+							vxlan-12
+brqc9159997-a4		8000.86b9285b6d04	no		tapf0ec8d59-22
+							vxlan-47
+brqc9b05afb-90		8000.7effa9fabd6b	no		tap87190667-16
+							vxlan-77
+brqcbb6e6e7-60		8000.56a935deec14	no		tap6feae41c-90
+							vxlan-35
+brqccf087d5-1d		8000.fa1659d718aa	no		tap7ed0d653-2c
+							vxlan-254
+brqcf258fee-3a		8000.22ed54940244	no		tap90c4f513-bf
+							vxlan-43
+brqd09b7c99-39		8000.364c86095acc	no		tapde330a43-27
+							vxlan-26
+brqd1a266b7-86		8000.468b1565e46b	no		tap4c1abd87-95
+							vxlan-79
+brqd35bb349-dd		8000.9a3a91f8a17e	no		tap30c165ec-25
+							vxlan-25
+brqd3fcece9-be		8000.8e84d77ff1f1	no		tap5a7116cc-6b
+							vxlan-248
+brqd481a19e-49		8000.8e3d2e5f6d4c	no		tap2df37f20-1a
+							vxlan-54
+brqd5a458ea-e9		8000.164cc65bb93f	no		tap82e25621-86
+							vxlan-33
+brqd61287db-59		8000.a6ec3e1adee5	no		tape421d19f-dd
+							vxlan-84
+brqd8e1a5c8-96		8000.46e61c4be257	no		tap5c8de3db-20
+							vxlan-72
+brqda57a5b0-4c		8000.02ef0c25f588	no		tap66b0917c-32
+							vxlan-64
+brqdc734735-26		8000.821999e0b4f8	no		tap9e598250-50
+							vxlan-68
+brqdca43a5e-d9		8000.228bf91ada96	no		tap7100a740-3e
+							vxlan-75
+brqdd85776a-6b		8000.2abaad516688	no		tapa0b300cd-95
+							tape6a13bf0-e2
+							vxlan-90
+brqddf9df37-24		8000.06c6627c805d	no		tapf70ef388-e7
+							vxlan-4
+brqea50609d-da		8000.125189c2d8cf	no		tap922178a5-ed
+							vxlan-7
+brqeaba311e-4a		8000.0a7c3547f4da	no		tap1f45d18c-f3
+							vxlan-30
+brqeada1208-35		8000.000000000000	no		
+brqfa7187db-ba		8000.6a8ce7a28349	no		tapa3779f1f-8a
+							vxlan-52
+brqfad1a2f6-e6		8000.56412b787c26	no		tap7ca96abd-5f
+							vxlan-247
+brqfb5f283b-89		8000.064d5b95e232	no		tap1aba0521-04
+							tapf9198a2d-65
+							vxlan-19
+brqfc3fc63a-1c		8000.5a20ba477e0a	no		tapca59a111-cf
+							vxlan-71
+brqfd35d225-f2		8000.000000000000	no		
+brqffd42d65-b9		8000.12640455db2f	no		tap98aef445-1b
+							vxlan-63
+lxcbr0		8000.000000000000	no		
